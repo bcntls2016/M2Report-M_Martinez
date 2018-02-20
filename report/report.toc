@@ -1,0 +1,97 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {UKenglish}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Introduction}{1}{chapter*.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Theory}{3}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}The density functional theory (DFT) applied to a bosonic system}{3}{section.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.1}Basic ideas on DFT}{3}{subsection.1.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Fundamental theorem}{3}{subsection.1.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Bosonic formulation}{3}{equation.1.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.2}Analytic expressions for the functional}{4}{subsection.1.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Kinetic energy}{4}{subsection.1.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{$\mathcal {E}_c$ Orsay-Trento Complete (OTC) functional and its simplified version (OT)}{4}{equation.1.1.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{$\mathcal {E}_c$ solid functional}{5}{equation.1.1.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}DIM approach: a mean-field description of the interaction between K and $^4$He$_N$}{5}{section.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.1}General principle}{5}{subsection.1.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.2}The diatomic case: K-He}{5}{subsection.1.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.3}DIM and mean-field theory}{7}{subsection.1.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Spherically symmetric ($ns$) state}{7}{equation.1.2.22}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{An in-depth description with the ($4p$) state}{8}{figure.caption.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.4}Writing energy contribution to doped helium droplet}{11}{subsection.1.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}TDDFT}{12}{section.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.1}Excitation process}{12}{subsection.1.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.2}Classical dynamics}{12}{subsection.1.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.3}Test particles and quantum dynamics in an isotrotropic state}{13}{subsection.1.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Simulation}{15}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Finding ground state properties}{15}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.1}Quantum versus classical potassium}{15}{subsection.2.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.2}Quick discussion on the influence of the version of the functional}{15}{subsection.2.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.3}Justifying diabatic hypothesis}{16}{subsection.2.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Classical dynamics towards ($4p$) states}{17}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.1}Quantum versus classical spectra}{17}{subsection.2.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.2}$\Sigma _{1/2}$ excitation: leaving free potassium}{18}{subsection.2.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.3}$\Pi _{1/2}$ excitation: complexity arises}{19}{subsection.2.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Bouncing potassium}{19}{subsection.2.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Displacing the excitation position}{20}{figure.caption.39}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Investigations on symmetry breaking}{21}{figure.caption.41}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.4}$\Pi _{3/2}$ exciplex formation: beyond symmetry breaking investigations}{21}{subsection.2.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Exciplex formation and symmetry breaking}{21}{subsection.2.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Fixing internal state evolution}{22}{figure.caption.43}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.5}Comparison with exprimental data}{23}{subsection.2.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Excitation towards $5s$ state}{23}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.1}Qualitative behavior and time scale}{24}{subsection.2.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.2}Strongly interacting neighbor helium atoms}{24}{subsection.2.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Conclusion}{27}{chapter*.47}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Annexe: technical details on coding}{29}{chapter*.48}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {a}Imaginary time propagation}{29}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {b}Real time propagation}{29}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {c}Simulating spectra}{30}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {d}Values of functional parameters}{31}{section.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{33}{table.caption.49}

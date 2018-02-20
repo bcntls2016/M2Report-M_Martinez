@@ -1,0 +1,44 @@
+\label{sec:ANX}
+The code we used is the 4He-DFT BCN-TLS \cite{BCNcode}.
+A detailed description is provided in \cite{DFTguide}. 
+We give here the most important features about the computational approach. 
+Equations are solved on a real space cubic grid.
+In order to compute the convolution products involved in the functional, we also work in \textsc{Fourier}'s space, which is why we use a cubic mesh. 
+
+\section{Imaginary time propagation}
+\label{sec:ANX-itp}
+
+In order to find ground state properties we have to minimize a \textsc{Schrödinger}-like equation. 
+Let us consider that we know the eigenvectors $\{\phi_k\}$ of the given Hamiltonian with energies $\{\varepsilon_k\}$
+\begin{align}
+H \phi_k = \varepsilon_k \phi_k 
+\end{align}
+
+Since $H$ does not depend on time, one can formally write the propagation in time of a given $\psi$ as
+\begin{align}
+\label{eq:ITP}
+i\hbar \pdv{t} \psi &= H\psi \Rightarrow \psi(t) = \e^{-i\frac{t}{\hbar} H} \, \psi(0)
+\end{align}
+
+Let us now introduce an \textit{imaginary time} as $\tau = i t/\hbar$ and rewrite (\citeq{eq:ITP}) as a function of $\tau$
+\begin{align}
+i\hbar \pdv{\tau} \dv{\tau}{t} \psi &= H \psi \Rightarrow \pdv{\tau} \psi = - H \psi \Rightarrow \psi(\tau) = \e^{- \tau H } \, \psi(0)
+\end{align}
+
+We expand $\psi(0)$ in the basis $H$ eigenvectors
+\begin{align}
+\psi(0) = \sum_{k=0}^{k=\infty} \alpha_k \phi_k \quad \text{and} \quad H \phi_k = \varepsilon_k \phi_k \Rightarrow \psi(\tau) = \sum_{k=0}^{k=\infty} \alpha_k \, \e^{-\tau \varepsilon_k }  \, \phi_k 
+\label{eq:ITP-dead}
+\end{align}
+
+What we see in \citeq{eq:ITP-dead}, is that upon propagation with  imaginary time, only the ground state survives. In practice to compute $\psi(\tau)$ we use 
+\begin{align}
+\psi(\tau+\delta \tau) \approx (1-\delta \tau H) \, \psi(\tau) \equiv \psi(\tau) + \delta \psi(\tau)
+\end{align}
+
+This expression is iterated until convergence, which gives the ground state eigenvector and  its associated eigenvalue
+\begin{align}
+\varepsilon_0 = \frac{\bra{\Psi}H\ket{\Psi}}{\braket{\Psi}{\Psi}}
+\end{align}
+
+

@@ -1,0 +1,1788 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.6 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{Toe2001}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Toennies}{T.}%
+     {J.~Peter}{J.~P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Vilesov}{V.}%
+     {Andrej~F.}{A.~F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Whaley}{W.}%
+     {K.~Birgitta}{K.~B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{TJPVAFWKB1}
+  \strng{fullhash}{TJPVAFWKB1}
+  \verb{doi}
+  \verb 10.1063/1.1359707
+  \endverb
+  \verb{eprint}
+  \verb http://dx.doi.org/10.1063/1.1359707
+  \endverb
+  \field{number}{2}
+  \field{pages}{31\bibrangedash 37}
+  \field{title}{Superfluid Helium Droplets: An Ultracold Nanolaboratory}
+  \verb{url}
+  \verb http://dx.doi.org/10.1063/1.1359707
+  \endverb
+  \field{volume}{54}
+  \field{journaltitle}{Physics Today}
+  \field{year}{2001}
+\endentry
+
+\entry{Toe2004}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Toennies}{T.}%
+     {J.~Peter}{J.~P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Vilesov}{V.}%
+     {Andrey~F.}{A.~F.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {WILEY-VCH Verlag}%
+  }
+  \keyw{inorganic chemistry, review, thermodynamic functions, thermochemistry,
+  helium, He, IR and Raman spectra (atoms and molecules)}
+  \strng{namehash}{TJPVAF1}
+  \strng{fullhash}{TJPVAF1}
+  \verb{doi}
+  \verb 10.1002/chin.200427197
+  \endverb
+  \field{issn}{1522-2667}
+  \field{note}{un commentaire}
+  \field{number}{27}
+  \field{pages}{no\bibrangedash no}
+  \field{title}{Superfluid Helium Droplets: A Uniquely Cold Nanomatrix for
+  Molecules and Molecular Complexes}
+  \verb{url}
+  \verb http://dx.doi.org/10.1002/chin.200427197
+  \endverb
+  \field{volume}{35}
+  \field{journaltitle}{ChemInform}
+  \field{year}{2004}
+\endentry
+
+\entry{Bar2006}{article}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Barranco}{B.}%
+     {Manuel}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Guardiola}{G.}%
+     {Rafael}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hern{\'a}ndez}{H.}%
+     {Susana}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mayol}{M.}%
+     {Ricardo}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Navarro}{N.}%
+     {Jes{\'u}s}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pi}{P.}%
+     {Mart{\'i}}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BM+2}
+  \strng{fullhash}{BMGRHSMRNJPM1}
+  \field{abstract}{%
+  We review the physics of helium nanodroplets with emphasis on theoretical
+  aspects that have been the subject of recent research, like 3He and mixed
+  3He− 4He droplets, vortices in droplets and droplets on weakly attractive
+  substrates, and in others that have not been previously reviewed in detail.
+  Whenever possible, we compare results from different theoretical methods,
+  with the aim of assessing the capabilities and limitations of the more
+  phenomenological ones, that often constitute the only instrument to address
+  some of the questions raised by current experiments.%
+  }
+  \verb{doi}
+  \verb 10.1007/s10909-005-9267-0
+  \endverb
+  \field{issn}{1573-7357}
+  \field{number}{1}
+  \field{pages}{1}
+  \field{title}{Helium Nanodroplets: An Overview}
+  \verb{url}
+  \verb http://dx.doi.org/10.1007/s10909-005-9267-0
+  \endverb
+  \field{volume}{142}
+  \field{journaltitle}{Journal of Low Temperature Physics}
+  \field{year}{2006}
+\endentry
+
+\entry{Har1995}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Hartmann}{H.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Miller}{M.}%
+     {R.~E.}{R.~E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Toennies}{T.}%
+     {J.~P.}{J.~P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Vilesov}{V.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {American Physical Society}%
+  }
+  \strng{namehash}{HM+1}
+  \strng{fullhash}{HMMRETJPVA1}
+  \verb{doi}
+  \verb 10.1103/PhysRevLett.75.1566
+  \endverb
+  \field{issue}{8}
+  \field{pages}{1566\bibrangedash 1569}
+  \field{title}{Rotationally Resolved Spectroscopy of S${\mathrm{F}}_{6}$ in
+  Liquid Helium Clusters: A Molecular Probe of Cluster Temperature}
+  \verb{url}
+  \verb https://link.aps.org/doi/10.1103/PhysRevLett.75.1566
+  \endverb
+  \field{volume}{75}
+  \field{journaltitle}{Phys. Rev. Lett.}
+  \field{year}{1995}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{Gre2000}{article}{}
+  \name{author}{7}{}{%
+    {{}%
+     {Grebenev}{G.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hartmann}{H.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lindinger}{L.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pörtner}{P.}%
+     {N.}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sartakov}{S.}%
+     {B.}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Toennies}{T.}%
+     {J.P.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Vilesov}{V.}%
+     {A.F.}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Cluster}
+  \strng{namehash}{GS+1}
+  \strng{fullhash}{GSHMLAPNSBTJVA1}
+  \verb{doi}
+  \verb http://dx.doi.org/10.1016/S0921-4526(99)01451-9
+  \endverb
+  \field{issn}{0921-4526}
+  \field{number}{1}
+  \field{pages}{65 \bibrangedash  72}
+  \field{title}{Spectroscopy of molecules in helium droplets}
+  \verb{url}
+  \verb http://www.sciencedirect.com/science/article/pii/S0921452699014519
+  \endverb
+  \field{volume}{280}
+  \field{journaltitle}{Physica B: Condensed Matter}
+  \field{year}{2000}
+\endentry
+
+\entry{Gom2014}{article}{}
+  \name{author}{44}{}{%
+    {{}%
+     {Gomez}{G.}%
+     {Luis~F.}{L.~F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ferguson}{F.}%
+     {Ken~R.}{K.~R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cryan}{C.}%
+     {James~P.}{J.~P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bacellar}{B.}%
+     {Camila}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tanyag}{T.}%
+     {Rico Mayro~P.}{R.~M.~P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jones}{J.}%
+     {Curtis}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Schorb}{S.}%
+     {Sebastian}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Anielski}{A.}%
+     {Denis}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Belkacem}{B.}%
+     {Ali}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bernando}{B.}%
+     {Charles}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Boll}{B.}%
+     {Rebecca}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bozek}{B.}%
+     {John}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Carron}{C.}%
+     {Sebastian}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chen}{C.}%
+     {Gang}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Delmas}{D.}%
+     {Tjark}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Englert}{E.}%
+     {Lars}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Epp}{E.}%
+     {Sascha~W.}{S.~W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Erk}{E.}%
+     {Benjamin}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Foucar}{F.}%
+     {Lutz}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hartmann}{H.}%
+     {Robert}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hexemer}{H.}%
+     {Alexander}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Huth}{H.}%
+     {Martin}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kwok}{K.}%
+     {Justin}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Leone}{L.}%
+     {Stephen~R.}{S.~R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ma}{M.}%
+     {Jonathan H.~S.}{J.~H.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Maia}{M.}%
+     {Filipe R. N.~C.}{F.~R. N.~C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Malmerberg}{M.}%
+     {Erik}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Marchesini}{M.}%
+     {Stefano}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Neumark}{N.}%
+     {Daniel~M.}{D.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Poon}{P.}%
+     {Billy}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Prell}{P.}%
+     {James}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rolles}{R.}%
+     {Daniel}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rudek}{R.}%
+     {Benedikt}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rudenko}{R.}%
+     {Artem}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Seifrid}{S.}%
+     {Martin}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Siefermann}{S.}%
+     {Katrin~R.}{K.~R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sturm}{S.}%
+     {Felix~P.}{F.~P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Swiggers}{S.}%
+     {Michele}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ullrich}{U.}%
+     {Joachim}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Weise}{W.}%
+     {Fabian}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zwart}{Z.}%
+     {Petrus}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bostedt}{B.}%
+     {Christoph}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gessner}{G.}%
+     {Oliver}{O.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Vilesov}{V.}%
+     {Andrey~F.}{A.~F.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {American Association for the Advancement of Science}%
+  }
+  \strng{namehash}{GLF+1}
+  \strng{fullhash}{GLFFKRCJPBCTRMPJCSSADBABCBRBJCSCGDTELESWEBFLHRHAHMKJLSRMJHSMFRNCMEMSNDMPBPJRDRBRASMSKRSFPSMUJWFZPBCGOVAF1}
+  \field{abstract}{%
+  When physicists rotate the superfluid 4He, it develops a regular array of
+  tiny whirlpools, called vortices. The same phenomenon should occur in helium
+  droplets half a micrometer in size, but studying individual droplets is
+  tricky. Gomez et al. used x-ray diffraction to deduce the shape of individual
+  rotating droplets and image the resulting vortex patterns, which confirmed
+  the superfluidity of the droplets. They found that superfluid droplets can
+  host a surprising number of vortices and can rotate faster than normal
+  droplets without disintegrating.Science, this issue p. 906 Helium
+  nanodroplets are considered ideal model systems to explore quantum
+  hydrodynamics in self-contained, isolated superfluids. However, exploring the
+  dynamic properties of individual droplets is experimentally challenging. In
+  this work, we used single-shot femtosecond x-ray coherent diffractive imaging
+  to investigate the rotation of single, isolated superfluid helium-4 droplets
+  containing ~108 to 1011 atoms. The formation of quantum vortex lattices
+  inside the droplets is confirmed by observing characteristic Bragg patterns
+  from xenon clusters trapped in the vortex cores. The vortex densities are up
+  to five orders of magnitude larger than those observed in bulk liquid helium.
+  The droplets exhibit large centrifugal deformations but retain axially
+  symmetric shapes at angular velocities well beyond the stability range of
+  viscous classical droplets.%
+  }
+  \verb{doi}
+  \verb 10.1126/science.1252395
+  \endverb
+  \verb{eprint}
+  \verb http://science.sciencemag.org/content/345/6199/906.full.pdf
+  \endverb
+  \field{issn}{0036-8075}
+  \field{number}{6199}
+  \field{pages}{906\bibrangedash 909}
+  \field{title}{Shapes and vorticities of superfluid helium nanodroplets}
+  \verb{url}
+  \verb http://science.sciencemag.org/content/345/6199/906
+  \endverb
+  \field{volume}{345}
+  \field{journaltitle}{Science}
+  \field{year}{2014}
+\endentry
+
+\entry{Anc2017}{article}{}
+  \name{author}{8}{}{%
+    {{}%
+     {Ancilotto}{A.}%
+     {F.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Barranco}{B.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Coppens}{C.}%
+     {F.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Eloranta}{E.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Halberstadt}{H.}%
+     {N.}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hernando}{H.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mateo}{M.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pi}{P.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AF+1}
+  \strng{fullhash}{AFBMCFEJHNHAMDPM1}
+  \field{pages}{to be published}
+  \field{journaltitle}{Int. Review in Phys. Chem.}
+  \field{year}{2017}
+\endentry
+
+\entry{Mer2016}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Merthe}{M.}%
+     {Daniel~J.}{D.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kresin}{K.}%
+     {Vitaly~V.}{V.~V.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{MDJKVV1}
+  \strng{fullhash}{MDJKVV1}
+  \verb{doi}
+  \verb 10.1021/acs.jpclett.6b02401
+  \endverb
+  \verb{eprint}
+  \verb http://dx.doi.org/10.1021/acs.jpclett.6b02401
+  \endverb
+  \field{note}{PMID: 27934050}
+  \field{number}{23}
+  \field{pages}{4879\bibrangedash 4883}
+  \field{title}{Electrostatic Deflection of a Molecular Beam of Massive Neutral
+  Particles: Fully Field-Oriented Polar Molecules within Superfluid
+  Nanodroplets}
+  \verb{url}
+  \verb http://dx.doi.org/10.1021/acs.jpclett.6b02401
+  \endverb
+  \field{volume}{7}
+  \field{journaltitle}{The Journal of Physical Chemistry Letters}
+  \field{year}{2016}
+\endentry
+
+\entry{She2017}{article}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Shepperson}{S.}%
+     {Benjamin}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chatterley}{C.}%
+     {Adam~S.}{A.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Søndergaard}{S.}%
+     {Anders~A.}{A.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Christiansen}{C.}%
+     {Lars}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lemeshko}{L.}%
+     {Mikhail}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Stapelfeldt}{S.}%
+     {Henrik}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SB+1}
+  \strng{fullhash}{SBCASSAACLLMSH1}
+  \verb{doi}
+  \verb 10.1063/1.4983703
+  \endverb
+  \verb{eprint}
+  \verb http://dx.doi.org/10.1063/1.4983703
+  \endverb
+  \field{number}{1}
+  \field{pages}{013946}
+  \field{title}{Strongly aligned molecules inside helium droplets in the
+  near-adiabatic regime}
+  \verb{url}
+  \verb http://dx.doi.org/10.1063/1.4983703
+  \endverb
+  \field{volume}{147}
+  \field{journaltitle}{The Journal of Chemical Physics}
+  \field{year}{2017}
+\endentry
+
+\entry{Vol2016}{article}{}
+  \name{author}{8}{}{%
+    {{}%
+     {Volk}{V.}%
+     {Alexander}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Thaler}{T.}%
+     {Philipp}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Knez}{K.}%
+     {Daniel}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hauser}{H.}%
+     {Andreas~W.}{A.~W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Steurer}{S.}%
+     {Johannes}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Grogger}{G.}%
+     {Werner}{W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hofer}{H.}%
+     {Ferdinand}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ernst}{E.}%
+     {Wolfgang~E.}{W.~E.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {The Royal Society of Chemistry}%
+  }
+  \strng{namehash}{VA+1}
+  \strng{fullhash}{VATPKDHAWSJGWHFEWE1}
+  \field{abstract}{%
+  Silver and gold nanowires are grown within superfluid helium nanodroplets and
+  investigated by high resolution electron microscopy after surface deposition.
+  The wire morphologies depend on the rate of metal atom doping in the pickup
+  sequence. While high doping rates result in a polycrystalline face-centered
+  cubic nanowire structure{,} at lower doping rates the initial
+  fivefold-symmetry seems to be preserved. An explanation for this observation
+  is given by computer simulations{,} which allow the derivation of timescales
+  for the nanowire growth process inside helium nanodroplets.%
+  }
+  \verb{doi}
+  \verb 10.1039/C5CP06248A
+  \endverb
+  \field{issue}{3}
+  \field{pages}{1451\bibrangedash 1459}
+  \field{title}{The impact of doping rates on the morphologies of silver and
+  gold nanowires grown in helium nanodroplets}
+  \verb{url}
+  \verb http://dx.doi.org/10.1039/C5CP06248A
+  \endverb
+  \field{volume}{18}
+  \field{journaltitle}{Phys. Chem. Chem. Phys.}
+  \field{year}{2016}
+\endentry
+
+\entry{Hig1998}{article}{}
+  \name{author}{7}{}{%
+    {{}%
+     {Higgins}{H.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Callegari}{C.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Reho}{R.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Stienkemeier}{S.}%
+     {F.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ernst}{E.}%
+     {W.~E.}{W.~E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gutowski}{G.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Scoles}{S.}%
+     {G.}{G.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HJ+1}
+  \strng{fullhash}{HJCCRJSFEWEGMSG1}
+  \verb{doi}
+  \verb 10.1021/jp981115g
+  \endverb
+  \verb{eprint}
+  \verb http://dx.doi.org/10.1021/jp981115g
+  \endverb
+  \field{number}{26}
+  \field{pages}{4952\bibrangedash 4965}
+  \field{title}{Helium Cluster Isolation Spectroscopy of Alkali Dimers in the
+  Triplet Manifold}
+  \verb{url}
+  \verb http://dx.doi.org/10.1021/jp981115g
+  \endverb
+  \field{volume}{102}
+  \field{journaltitle}{The Journal of Physical Chemistry A}
+  \field{year}{1998}
+\endentry
+
+\entry{Sti1996}{article}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Stienkemeier}{S.}%
+     {F.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Higgins}{H.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Callegari}{C.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kanorsky}{K.}%
+     {S.~I.}{S.~I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ernst}{E.}%
+     {W.~E.}{W.~E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Scoles}{S.}%
+     {G.}{G.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SF+1}
+  \strng{fullhash}{SFHJCCKSIEWESG1}
+  \field{abstract}{%
+  Large liquid helium clusters (Hen, n ≈ 104) produced in a supersonic jet
+  are doped with alkali atoms (Li, Na, K) and characterized by means of laser
+  induced fluorescence. Each cluster contains, on average, less than one dopant
+  atom. Both excitation and emission spectra have been recorded. The observed
+  excitation spectra are analyzed, calculating the transitions within an
+  approach based on the hypothesis that the chromophores are trapped in a
+  dimple on the cluster's surface as predicted by the theoretical calculations
+  of Ancilotto et al. [9]. The results of the model calculations are in good
+  qualitative agreement with the experimental findings. In spite of the very
+  weak binding energy (a few cm−1), some of the excited atoms remain bound to
+  the surface, provided the excitation occurs at frequencies not too far from
+  the alkali's gas phase absorptions. These bound-bound excitations produce
+  very broad, red shifted emission spectra. At other, blue shifted frequencies,
+  the excited atoms desorb from the cluster's surface, giving rise to
+  unshifted, free atom, emission spectra. The heavier alkali metals (Na, K)
+  show, compared to the calculations, an additional broadening which is
+  attributed to surface excitations on the helium droplet.%
+  }
+  \verb{doi}
+  \verb 10.1007/s004600050090
+  \endverb
+  \field{issn}{1431-5866}
+  \field{number}{3}
+  \field{pages}{253\bibrangedash 263}
+  \field{title}{Spectroscopy of alkali atoms (Li, Na, K) attached to large
+  helium clusters}
+  \verb{url}
+  \verb http://dx.doi.org/10.1007/s004600050090
+  \endverb
+  \field{volume}{38}
+  \field{journaltitle}{Zeitschrift f{\"u}r Physik D Atoms, Molecules and
+  Clusters}
+  \field{year}{1996}
+\endentry
+
+\entry{Lac2011}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Lackner}{L.}%
+     {F.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Krois}{K.}%
+     {G.}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Theisen}{T.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Koch}{K.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ernst}{E.}%
+     {W.~E.}{W.~E.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {The Royal Society of Chemistry}%
+  }
+  \strng{namehash}{LF+1}
+  \strng{fullhash}{LFKGTMKMEWE1}
+  \field{abstract}{%
+  The preparation of an artificial superatom consisting of a positive charge
+  inside a superfluid helium nanodroplet and an electron in an orbital
+  surrounding the droplet is of fundamental interest and represents an
+  experimental challenge. In this work{,} nanodroplets of several thousand
+  helium atoms are doped with single caesium (Cs) atoms. While on the
+  droplet{,} the Cs valence electron is excited in two steps through an
+  intermediate state into nS{,} nP{,} and nD states. The excitation is
+  monitored by laser induced fluorescence or{,} for high principal quantum
+  numbers{,} by resonant three-photon-ionization. On-droplet Rydberg
+  excitations are resolved up to about n = 20. The energies are compared with
+  those of free Cs atom Rydberg states and quantum defects as well as the
+  on-droplet ionization threshold are derived.%
+  }
+  \verb{doi}
+  \verb 10.1039/C1CP21280J
+  \endverb
+  \field{issue}{42}
+  \field{pages}{18781\bibrangedash 18788}
+  \field{title}{Spectroscopy of nS{,} nP{,} and nD Rydberg series of Cs atoms
+  on helium nanodroplets}
+  \verb{url}
+  \verb http://dx.doi.org/10.1039/C1CP21280J
+  \endverb
+  \field{volume}{13}
+  \field{journaltitle}{Phys. Chem. Chem. Phys.}
+  \field{year}{2011}
+\endentry
+
+\entry{Lac2012}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Lackner}{L.}%
+     {Florian}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Krois}{K.}%
+     {Günter}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Koch}{K.}%
+     {Markus}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ernst}{E.}%
+     {Wolfgang~E.}{W.~E.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LF+2}
+  \strng{fullhash}{LFKGKMEWE1}
+  \verb{doi}
+  \verb 10.1021/jz300381y
+  \endverb
+  \verb{eprint}
+  \verb http://dx.doi.org/10.1021/jz300381y
+  \endverb
+  \field{note}{PMID: 26286790}
+  \field{number}{10}
+  \field{pages}{1404\bibrangedash 1408}
+  \field{title}{Rubidium on Helium Droplets: Analysis of an Exotic Rydberg
+  Complex for $n^* < 20$ and $0 \le l \le 3$}
+  \verb{url}
+  \verb http://dx.doi.org/10.1021/jz300381y
+  \endverb
+  \field{volume}{3}
+  \field{journaltitle}{The Journal of Physical Chemistry Letters}
+  \field{year}{2012}
+\endentry
+
+\entry{Bru2001}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Br{\"u}hl}{B.}%
+     {F.~R.}{F.~R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Trasca}{T.}%
+     {R.~A.}{R.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ernst}{E.}%
+     {W.~E.}{W.~E.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BFRTRAEWE1}
+  \strng{fullhash}{BFRTRAEWE1}
+  \verb{doi}
+  \verb 10.1063/1.1410118
+  \endverb
+  \verb{eprint}
+  \verb http://aip.scitation.org/doi/pdf/10.1063/1.1410118
+  \endverb
+  \field{number}{22}
+  \field{pages}{10220\bibrangedash 10224}
+  \field{title}{Rb–He exciplex formation on helium nanodroplets}
+  \verb{url}
+  \verb http://aip.scitation.org/doi/abs/10.1063/1.1410118
+  \endverb
+  \field{volume}{115}
+  \field{journaltitle}{The Journal of Chemical Physics}
+  \field{year}{2001}
+\endentry
+
+\entry{Her2012}{article}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Hernando}{H.}%
+     {Alberto}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Barranco}{B.}%
+     {Manuel}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pi}{P.}%
+     {Marti}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Loginov}{L.}%
+     {Evgeniy}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Langlet}{L.}%
+     {Marina}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Drabbels}{D.}%
+     {Marcel}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {The Royal Society of Chemistry}%
+  }
+  \strng{namehash}{HA+1}
+  \strng{fullhash}{HABMPMLELMDM1}
+  \field{abstract}{%
+  The dynamics following the photoexcitation of Na and Li atoms located on the
+  surface of helium nanodroplets has been investigated in a joint experimental
+  and theoretical study. Photoelectron spectroscopy has revealed that
+  excitation of the alkali atoms via the (n + 1)s ? ns transition leads to the
+  desorption of these atoms. The mean kinetic energy of the desorbed atoms{,}
+  as determined by ion imaging{,} shows a linear dependence on excitation
+  frequency. These experimental findings are analyzed within a
+  three-dimensional{,} time-dependent density functional approach for the
+  helium droplet combined with a Bohmian dynamics description of the desorbing
+  atom. This hybrid method reproduces well the key experimental observables.
+  The dependence of the observables on the impurity mass is discussed by
+  comparing the results obtained for the 6Li and 7Li isotopes. The calculations
+  show that the desorption of the excited alkali atom is accompanied by the
+  creation of highly non-linear density waves in the helium droplet that
+  propagate at supersonic velocities.%
+  }
+  \verb{doi}
+  \verb 10.1039/C2CP23526A
+  \endverb
+  \field{issue}{11}
+  \field{pages}{3996\bibrangedash 4010}
+  \field{title}{Desorption of alkali atoms from 4He nanodroplets}
+  \verb{url}
+  \verb http://dx.doi.org/10.1039/C2CP23526A
+  \endverb
+  \field{volume}{14}
+  \field{journaltitle}{Phys. Chem. Chem. Phys.}
+  \field{year}{2012}
+\endentry
+
+\entry{Log2014}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Loginov}{L.}%
+     {Evgeniy}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Drabbels}{D.}%
+     {Marcel}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LEDM1}
+  \strng{fullhash}{LEDM1}
+  \verb{doi}
+  \verb 10.1021/jp4121996
+  \endverb
+  \verb{eprint}
+  \verb http://dx.doi.org/10.1021/jp4121996
+  \endverb
+  \field{note}{PMID: 24673631}
+  \field{number}{15}
+  \field{pages}{2738\bibrangedash 2748}
+  \field{title}{Dynamics of Excited Sodium Atoms Attached to Helium
+  Nanodroplets}
+  \verb{url}
+  \verb http://dx.doi.org/10.1021/jp4121996
+  \endverb
+  \field{volume}{118}
+  \field{journaltitle}{The Journal of Physical Chemistry A}
+  \field{year}{2014}
+\endentry
+
+\entry{Log2015}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Loginov}{L.}%
+     {Evgeniy}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hernando}{H.}%
+     {Alberto}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Beswick}{B.}%
+     {J.~Alberto}{J.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Halberstadt}{H.}%
+     {Nadine}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Drabbels}{D.}%
+     {Marcel}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LE+1}
+  \strng{fullhash}{LEHABJAHNDM1}
+  \verb{doi}
+  \verb 10.1021/jp511885t
+  \endverb
+  \verb{eprint}
+  \verb http://dx.doi.org/10.1021/jp511885t
+  \endverb
+  \field{note}{PMID: 25582680}
+  \field{number}{23}
+  \field{pages}{6033\bibrangedash 6044}
+  \field{title}{Excitation of Sodium Atoms Attached to Helium Nanodroplets: The
+  3p $\leftarrow$ 3s Transition Revisited}
+  \verb{url}
+  \verb http://dx.doi.org/10.1021/jp511885t
+  \endverb
+  \field{volume}{119}
+  \field{journaltitle}{The Journal of Physical Chemistry A}
+  \field{year}{2015}
+\endentry
+
+\entry{Reh2000A}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Reho}{R.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Higgins}{H.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Callegari}{C.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lehmann}{L.}%
+     {K.~K.}{K.~K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Scoles}{S.}%
+     {G.}{G.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{RJ+1}
+  \strng{fullhash}{RJHJCCLKKSG1}
+  \verb{doi}
+  \verb 10.1063/1.1321033
+  \endverb
+  \verb{eprint}
+  \verb http://dx.doi.org/10.1063/1.1321033
+  \endverb
+  \field{number}{21}
+  \field{pages}{9686\bibrangedash 9693}
+  \field{title}{Alkali–helium exciplex formation on the surface of helium
+  nanodroplets. I. Dispersed emission spectroscopy}
+  \verb{url}
+  \verb http://dx.doi.org/10.1063/1.1321033
+  \endverb
+  \field{volume}{113}
+  \field{journaltitle}{The Journal of Chemical Physics}
+  \field{year}{2000}
+\endentry
+
+\entry{Reh2000B}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Reho}{R.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Higgins}{H.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lehmann}{L.}%
+     {K.~K.}{K.~K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Scoles}{S.}%
+     {G.}{G.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{RJ+1}
+  \strng{fullhash}{RJHJLKKSG1}
+  \verb{doi}
+  \verb 10.1063/1.1321034
+  \endverb
+  \verb{eprint}
+  \verb http://dx.doi.org/10.1063/1.1321034
+  \endverb
+  \field{number}{21}
+  \field{pages}{9694\bibrangedash 9701}
+  \field{title}{Alkali–helium exciplex formation on the surface of helium
+  nanodroplets. II. A time-resolved study}
+  \verb{url}
+  \verb http://dx.doi.org/10.1063/1.1321034
+  \endverb
+  \field{volume}{113}
+  \field{journaltitle}{The Journal of Chemical Physics}
+  \field{year}{2000}
+\endentry
+
+\entry{Sch2001}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Schulz}{S.}%
+     {C.~P.}{C.~P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Claas}{C.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Stienkemeier}{S.}%
+     {F.}{F.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {American Physical Society}%
+  }
+  \strng{namehash}{SCPCPSF1}
+  \strng{fullhash}{SCPCPSF1}
+  \verb{doi}
+  \verb 10.1103/PhysRevLett.87.153401
+  \endverb
+  \field{issue}{15}
+  \field{pages}{153401}
+  \field{title}{Formation of ${K}^{*}\mathrm{He}$ Exciplexes on the Surface of
+  Helium Nanodroplets Studied in Real Time}
+  \verb{url}
+  \verb http://link.aps.org/doi/10.1103/PhysRevLett.87.153401
+  \endverb
+  \field{volume}{87}
+  \field{journaltitle}{Phys. Rev. Lett.}
+  \field{year}{2001}
+\endentry
+
+\entry{Van2017}{article}{}
+  \name{author}{8}{}{%
+    {{}%
+     {Vangerow}{V.}%
+     {Johannes}{J.}%
+     {von}{v.}%
+     {}{}}%
+    {{}%
+     {Coppens}{C.}%
+     {François}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Leal}{L.}%
+     {Antonio}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pi}{P.}%
+     {Martí}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Barranco}{B.}%
+     {Manuel}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Halberstadt}{H.}%
+     {Nadine}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Stienkemeier}{S.}%
+     {Frank}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mudrich}{M.}%
+     {Marcel}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{VJv+1}
+  \strng{fullhash}{VJvCFLAPMBMHNSFMM1}
+  \verb{doi}
+  \verb 10.1021/acs.jpclett.6b02598
+  \endverb
+  \verb{eprint}
+  \verb http://dx.doi.org/10.1021/acs.jpclett.6b02598
+  \endverb
+  \field{note}{PMID: 27996261}
+  \field{number}{1}
+  \field{pages}{307\bibrangedash 312}
+  \field{title}{Imaging Excited-State Dynamics of Doped He Nanodroplets in
+  Real-Time}
+  \verb{url}
+  \verb http://dx.doi.org/10.1021/acs.jpclett.6b02598
+  \endverb
+  \field{volume}{8}
+  \field{journaltitle}{The Journal of Physical Chemistry Letters}
+  \field{year}{2017}
+\endentry
+
+\entry{Zbi2005}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Zbiri}{Z.}%
+     {Mohamed}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Daul}{D.}%
+     {Claude}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Exciplexes}
+  \strng{namehash}{ZMDC1}
+  \strng{fullhash}{ZMDC1}
+  \verb{doi}
+  \verb http://dx.doi.org/10.1016/j.physleta.2005.04.066
+  \endverb
+  \field{issn}{0375-9601}
+  \field{number}{1}
+  \field{pages}{170 \bibrangedash  176}
+  \field{title}{Theoretical investigation of the Cs$^*$He$_{n\geqslant 3}$
+  exciplexes}
+  \verb{url}
+  \verb http://www.sciencedirect.com/science/article/pii/S0375960105006286
+  \endverb
+  \field{volume}{341}
+  \field{journaltitle}{Physics Letters A}
+  \field{year}{2005}
+\endentry
+
+\entry{Hoh1964}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Hohenberg}{H.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kohn}{K.}%
+     {W.}{W.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {American Physical Society}%
+  }
+  \strng{namehash}{HPKW1}
+  \strng{fullhash}{HPKW1}
+  \verb{doi}
+  \verb 10.1103/PhysRev.136.B864
+  \endverb
+  \field{issue}{3B}
+  \field{pages}{B864\bibrangedash B871}
+  \field{title}{Inhomogeneous Electron Gas}
+  \verb{url}
+  \verb https://link.aps.org/doi/10.1103/PhysRev.136.B864
+  \endverb
+  \field{volume}{136}
+  \field{journaltitle}{Phys. Rev.}
+  \field{year}{1964}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{Anc2005A}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Ancilotto}{A.}%
+     {F.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Barranco}{B.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Caupin}{C.}%
+     {F.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mayol}{M.}%
+     {R.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pi}{P.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AF+1}
+  \strng{fullhash}{AFBMCFMRPM1}
+  \verb{doi}
+  \verb 10.1103/PhysRevB.72.214522
+  \endverb
+  \field{pages}{214522}
+  \field{title}{Freezing of $^{4}\mathrm{He}$ and its liquid-solid interface
+  from density functional theory}
+  \verb{url}
+  \verb http://link.aps.org/doi/10.1103/PhysRevB.72.214522
+  \endverb
+  \field{volume}{72}
+  \field{journaltitle}{Phys. Rev. B}
+  \field{year}{2005}
+\endentry
+
+\entry{Ell63}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Ellison}{E.}%
+     {Frank~O.}{F.~O.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{EFO1}
+  \strng{fullhash}{EFO1}
+  \verb{doi}
+  \verb 10.1021/ja00905a002
+  \endverb
+  \verb{eprint}
+  \verb http://dx.doi.org/10.1021/ja00905a002
+  \endverb
+  \field{number}{22}
+  \field{pages}{3540\bibrangedash 3544}
+  \field{title}{A Method of Diatomics in Molecules. I. General Theory and
+  Application to H2O}
+  \verb{url}
+  \verb http://dx.doi.org/10.1021/ja00905a002
+  \endverb
+  \field{volume}{85}
+  \field{journaltitle}{Journal of the American Chemical Society}
+  \field{year}{1963}
+\endentry
+
+\entry{Nist}{misc}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Kramida}{K.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {{Yu.~Ralchenko}}{Y.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Reader}{R.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {{and NIST ASD Team}}{a.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KA+1}
+  \strng{fullhash}{KAYRJa1}
+  \field{howpublished}{{NIST Atomic Spectra Database (ver. 5.3), [Online].
+  Available: {\tt{http://physics.nist.gov/asd}} [2017, June 20]. National
+  Institute of Standards and Technology, Gaithersburg, MD.}}
+  \field{year}{2015}
+\endentry
+
+\entry{Pas1983}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Pascale}{P.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {American Physical Society}%
+  }
+  \strng{namehash}{PJ1}
+  \strng{fullhash}{PJ1}
+  \verb{doi}
+  \verb 10.1103/PhysRevA.28.632
+  \endverb
+  \field{issue}{2}
+  \field{pages}{632\bibrangedash 644}
+  \field{title}{Use of $l$-dependent pseudopotentials in the study of
+  alkali-metal-atom\char22{}He systems. The adiabatic molecular potentials}
+  \verb{url}
+  \verb https://link.aps.org/doi/10.1103/PhysRevA.28.632
+  \endverb
+  \field{volume}{28}
+  \field{journaltitle}{Phys. Rev. A}
+  \field{year}{1983}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{Pat1991}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Patil}{P.}%
+     {S.~H.}{S.~H.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{PSH1}
+  \strng{fullhash}{PSH1}
+  \verb{doi}
+  \verb 10.1063/1.460091
+  \endverb
+  \verb{eprint}
+  \verb http://dx.doi.org/10.1063/1.460091
+  \endverb
+  \field{number}{12}
+  \field{pages}{8089\bibrangedash 8095}
+  \field{title}{Adiabatic potentials for alkali–inert gas systems in the
+  ground state}
+  \verb{url}
+  \verb http://dx.doi.org/10.1063/1.460091
+  \endverb
+  \field{volume}{94}
+  \field{journaltitle}{The Journal of Chemical Physics}
+  \field{year}{1991}
+\endentry
+
+\entry{Run1984}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Runge}{R.}%
+     {Erich}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gross}{G.}%
+     {E.~K.~U.}{E.~K.~U.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {American Physical Society}%
+  }
+  \strng{namehash}{REGEKU1}
+  \strng{fullhash}{REGEKU1}
+  \verb{doi}
+  \verb 10.1103/PhysRevLett.52.997
+  \endverb
+  \field{issue}{12}
+  \field{pages}{997\bibrangedash 1000}
+  \field{title}{Density-Functional Theory for Time-Dependent Systems}
+  \verb{url}
+  \verb https://link.aps.org/doi/10.1103/PhysRevLett.52.997
+  \endverb
+  \field{volume}{52}
+  \field{journaltitle}{Phys. Rev. Lett.}
+  \field{year}{1984}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{DFTguide}{misc}{}
+  \name{author}{8}{}{%
+    {{}%
+     {Barranco}{B.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Coppens}{C.}%
+     {F.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Halberstadt}{H.}%
+     {N.}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hernando}{H.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Leal}{L.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mateo}{M.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mayol}{M.}%
+     {R.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pi}{P.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BM+1}
+  \strng{fullhash}{BMCFHNHALAMDMRPM1}
+  \field{title}{Zero temperature DFT and TDDFT for 4He: A short guide for
+  practitioners}
+  \verb{url}
+  \verb https://github.com/bcntls2016/DFT-Guide/blob/master/dft-guide.pdf
+  \endverb
+\endentry
+
+\entry{BCNcode}{misc}{}
+  \name{author}{9}{}{%
+    {{}%
+     {Pi}{P.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ancilotto}{A.}%
+     {F.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Coppens}{C.}%
+     {F.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Halberstadt}{H.}%
+     {N.}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hernando}{H.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Leal}{L.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mateo}{M.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mayol}{M.}%
+     {R.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Barranco}{B.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{PM+1}
+  \strng{fullhash}{PMAFCFHNHALAMDMRBM1}
+  \field{title}{4He-DFT BCN-TLS: A Computer Package for Simulating Structural
+  Properties and Dynamics of Doped Liquid Helium-4 Systems}
+  \verb{url}
+  \verb https://github.com/bcntls2016
+  \endverb
+  \field{year}{2016}
+\endentry
+
+\entry{B-Ral1960}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Ralston}{R.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wilf}{W.}%
+     {H.~S.}{H.~S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{RAWHS1}
+  \strng{fullhash}{RAWHS1}
+  \field{title}{Mathematical methods for digital computers}
+  \field{year}{1960}
+\endentry
+
+\entry{Mat2011}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Mateo}{M.}%
+     {David}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hernando}{H.}%
+     {Alberto}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Barranco}{B.}%
+     {Manuel}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mayol}{M.}%
+     {Ricardo}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pi}{P.}%
+     {Mart\'{\i}}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {American Physical Society}%
+  }
+  \strng{namehash}{MD+1}
+  \strng{fullhash}{MDHABMMRPM1}
+  \verb{doi}
+  \verb 10.1103/PhysRevB.83.174505
+  \endverb
+  \field{issue}{17}
+  \field{pages}{174505}
+  \field{title}{Absorption spectrum of atomic impurities in isotopic mixtures
+  of liquid helium}
+  \verb{url}
+  \verb https://link.aps.org/doi/10.1103/PhysRevB.83.174505
+  \endverb
+  \field{volume}{83}
+  \field{journaltitle}{Phys. Rev. B}
+  \field{year}{2011}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

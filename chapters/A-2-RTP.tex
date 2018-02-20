@@ -1,0 +1,26 @@
+\section{Real time propagation}
+\label{sec:ANX-rtp}
+
+To solve time dependent equations we use \textsc{Hamming}'s predictor-modifier-corrector method which is detailed in \cite{B-Ral1960}. Let us consider a system of $N$ ordinary differential equations
+\begin{align}
+\dot{\vb{y}} \equiv \dv{\vb{y}}{x}=\vb{f}(x,\vb{y}) \with \vb{f}:\mathbb{R}^{N+1}\rightarrow\mathbb{R}^N \quad \text{and} \quad \vb{y} \in \mathbb{R}^N
+\end{align}
+We set $\vb{y}(x_0) = \vb{y}_0$ and we denote by $h$ the $x$ step. Higher order differential equations can be reduced to a system of coupled differential equations. We apply the following scheme whose error is $\mathcal{O}(h^5)$
+\begin{align}
+&\text{[Predictor]} \quad \vb{p}_{n+1} =\vb{y}_{n-3} + \frac{4h}{3}(2\dot{\vb{y}}_n-\dot{\vb{y}}_{n-1} + 2\dot{\vb{y}}_{n-2}) \label{eq:RTP-3} \\
+&\text{[Modifier]} \quad \vb{m}_{n+1} = \vb{p}_{n+1} - \frac{112}{121}(\vb{p}_n-\vb{c}_n) \quad \text{and} \quad \dot{\vb{m}}_{n+1} =\vb{f}(x_{n+1},\vb{m}_{n+1}) \\
+&\text{[Corrector]} \quad \vb{c}_{n+1} = \frac{1}{8}(9\vb{y}_n-\vb{y}_{n-2}+3h(\dot{\vb{m}}_{n+1} + 2 \dot{\vb{y}}_n-\dot{\vb{y}}_{n-1})) \\
+&\text{[Final value]} \quad \vb{y}_{n+1} = \vb{c}_{n+1} + \frac{9}{121}(\vb{p}_{n+1}-\vb{c}_{n+1})
+\end{align}
+
+The main advantage of this algorithm is that it only requires two evaluations of $\vb{f}$ per step and this is the time consuming part of our calculation. 
+Nevertheless note that is a not a self starting method, it requires values from three preceding steps (see \citeq{eq:RTP-3}). We need to be at least as accurate than $\mathcal{O}(h^5)$ this is why we initialize the computation by using \textsc{Runge-Kutta-Gill} method
+\begin{align}
+\vb{k}_1 &= h \, \vb{f} ( x_n,y_n) \\
+\vb{k}_2 &= h \, \vb{f}\left(x_n+\frac{h}{2}, \vb{y}_n + \frac{1}{2}\,\vb{k}_1  \right)\\
+\vb{k}_3 &= h \, \vb{f}\left(x_n+\frac{h}{2}, \vb{y}_n + (-1+\sqrt{2}) _, \vb{k}_1 + \left(1-\frac{\sqrt{2}}{2}\right)\vb{k}_2\right)\\
+\vb{k}_4 &= h \, \vb{f}\left(x_n+h, \vb{y}_n -\frac{\sqrt{2}}{2} \, \vb{k}_2 + \left(1+\frac{\sqrt{2}}{2}\right)\vb{k}_3\right)\\
+\vb{y}_{n+1} &= \vb{y}_n + \frac{1}{6} \left(\vb{k}_1 + (2-\sqrt{2}) \, \vb{k}_2 + (2+\sqrt{2}) \, \vb{k}_3 + \vb{k}_4\right) + \mathcal{O}(h^5)
+\end{align}
+
+We do not discuss here the boundary conditions, in particular how we can deal with helium leaving the droplet, because it is beyond the scope of this annex, this is explained in details in \cite{DFTguide}.

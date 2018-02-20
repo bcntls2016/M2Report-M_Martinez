@@ -1,0 +1,81 @@
+
+\section{The density functional theory (DFT) applied to a bosonic system}
+
+\subsection{Basic ideas on DFT}
+
+\subsubsection{Fundamental theorem}
+
+Let us start by defining our system: we will be considering a droplet of $N$ helium atoms described by the many-body wavefunction $\Phi(\vb{r}_1, \ldots, \vb{r}_N)$.
+We introduce the density $\rho(\vb{r})$ as
+\begin{align}\label{eq:DFT-rhodef}
+\rho(\vb{r}) = \bra{\Phi} \hat{\rho} \ket{\Phi} = \bra{\Phi(\vb{r}_1, \ldots, \vb{r}_N)} \sum_{i=1}^{i=N} \delta(\vb{r}-\vb{r}_i) \ket{\Phi(\vb{r}_1, \ldots, \vb{r}_N)}
+\end{align}
+
+The density functional theory mostly consists in finding ground state properties.
+It relies on the \textsc{Hohenberg-Kohn} theorem \cite{Hoh1964} which states that the lowest energy configuration is fully determined by the density.
+
+\cadre{\textbf{Theorem.} The external potential (and hence the total energy), is a unique functional of the density. The functional that delivers the ground state energy of the system, gives the lowest energy if and only if the input density is the true ground state density.}
+
+One commonly uses the so-called \textsc{Kohn-Sham} approach, which consists in writing the total energy of the system in the following way
+\begin{align}\label{eq:DFT-EKS}% E Kohn-Sham
+E[\rho]=\int \dd{\vb{r}} \{\mathcal{T}[\rho] + \mathcal{E}_c[\rho]\}
+\end{align}
+In this expression $\mathcal{T}$ represents the kinetic energy of a non-interacting set of particles, and $\mathcal{E}_c$ the interaction in a very general way. The crucial point in the DFT is the explicit form for the functional $\mathcal{E}_c[\rho]$. There is no procedure to get it. Hence one has to resort to physical intuition to choose a form and to fit its parameter values.
+
+\subsubsection{Bosonic formulation}
+Helium 4 is a boson, and the temperature of the droplets has been determined to be of 0.37~K in usual experimental conditions. We thus assume that the system is fully condensed in a given state whose associated wave function is denoted as $\varphi_0$
+\begin{align}\label{eq:DFT-PhiNBcond}% Phi N-Body condensate
+\ket{\Phi(\vb{r}_1, \ldots, \vb{r}_N)} = \prod_{i=1}^{i=N} \varphi_0(\vb{r}_i) \quad\text{hence}\quad \rho(\vb{r}) = N |\varphi_0(\vb{r})|^2
+\end{align}
+Also, we introduce an \textit{order parameter} (also called \emph{effective wave function}) which actually almost corresponds to the single-body wave-function and will lead to simpler equations
+\begin{align}\label{eq:DFT-order-param-def}
+\Psi(\vb{r}) \equiv \sqrt{\rho(\vb{r})} \, \e^{i\Sc(\vb{r})} \Rightarrow \Psi(\vb{r})=\sqrt{N}\, \varphi_0(\vb{r})
+\end{align}
+
+\subsection{Analytic expressions for the functional}
+
+\label{sec:DFT-func-analytics}
+
+\subsubsection{Kinetic energy}
+The purpose of the \textsc{Kohm-Sham} formulation is to make the expression of kinetic energy simple.
+Using (\ref{eq:DFT-PhiNBcond}) and denoting by $m_\HE$ the helium atom mass, we have
+\begin{align}\label{eq:DFT-Tfunc}
+\mathcal{T}[\rho] &= -\frac{\hbar^2}{2m_\HE} \bra{\Phi}\vb{\nabla}^2_{\vb{r}_i} \ket{\Phi}  = -N\frac{\hbar^2}{2m_\HE} \bra{\varphi_0}\vb{\nabla}^2 \ket{\varphi_0} = \frac{\hbar^2}{2m_\HE} \int \dd{\vb{r}} (\nabla \Psi)^2 
+\end{align}
+
+\subsubsection{$\mathcal{E}_c$ Orsay-Trento Complete (OTC) functional and its simplified version (OT)}
+
+The choice of a functional for $\mathcal{E}_c$ is actually the decisive point in a DFT calculation.
+We do not discuss here how to find such an analytic expression, the interested reader may refer to \cite{Bar2006}.
+We simply present the most accurate one, which has been successfully used in a number of studies \cite{Bar2006,Anc2017} (the values for the parameters can be found in the \citanx{sec:ANX-values})
+\begin{align*}\label{eq:DFT-OTfunc}
+\mathcal{E}_c[\rho] =\frac{1}{2} \int \dd{\vb{r'}} \rho(\vb{r}) V_\LJ(|\vb{r}-\vb{r'}|) \rho(\vb{r'}) +\frac{c_2}{2} \, \rho(\vb{r})[\bar{\rho}(\vb{r})]^2 +\frac{c_3}{3} \,\rho(\vb{r})[\bar{\rho}(\vb{r})]^3&\\
+- \frac{\hbar^2}{4m} \, \alpha_s \int \dd{\vb{r'}} \tilde{\omega}(|\vb{r}-\vb{r'}|) \left(1-\frac{\tilde{\rho}(\vb{r})}{\rho_{0}}\right)  \grad{}_{\vb{r}} [\rho(\vb{r})] \cdot \grad{}_{\vb{r}'} [\rho(\vb{r'})] &\left(1-\frac{\tilde{\rho}(\vb{r'})}{\rho_{0}}\right) \\
+- \frac{m}{4} \int \dd{\vb{r'}} V_\J(|\vb{r}-\vb{r'}|)\rho(\vb{r}) &\rho(\vb{r'}) [\vb{v}(\vb{r})-\vb{v}(\vb{r'})]^2 \num
+\end{align*}
+In (\ref{eq:DFT-OTfunc}) we have introduced two averaged densities
+\begin{align}
+\bar{\rho}(\vb{r})&=\int \dd{r'} \rho(\vb{r'}) \, \bar{\omega}(|\vb{r}-\vb{r'}|) \with \bar{\omega}(\vb{r}) = \left\{ \mqty{\frac{3}{4\pi h^3} & r < h \\ 0 & \text{otherwise} } \right. \\
+\tilde{\rho}(\vb{r})&=\int \dd{r'} \rho(\vb{r'}) \, \tilde{\omega}(|\vb{r}-\vb{r'}|) \with \tilde{\omega}(\vb{r}) = \frac{1}{(\sqrt{\pi}l)^{3}} \, \e^{-(r/l)^2}
+\end{align}
+a truncated \textsc{Lennard-Jones} potential
+\begin{align}
+V_\LJ(\vb{r}) = \left\{ \mqty{4\varepsilon_\text{LJ} \left(\left(\frac{\sigma}{r}\right)^{12} - \left(\frac{\sigma}{r}\right)^{6}\right) & r > h \\ 0 & \text{otherwise} } \right.
+\end{align}
+and an effective current-current interaction that mimics the back flow contribution, fitted to reproduce the maxon-roton dispersion curve in liquid \he{}, with the velocity $\vb{v}(\vb{r})$ defined as a function of to the current density $\vb{j}(\vb{r})$.
+\begin{align}
+V_\J(r) &= (\gamma_{11}+\gamma_{12} r^2)\, \e^{-\alpha_1 \, r^2}+(\gamma_{21}+\gamma_{22} \, r^2)\, \e^{-\alpha_2 r^2} \\
+\vb{v}(\vb{r}) &= \frac{\vb{j}(\vb{r})}{\rho(\vb{r})} \with \vb{j}(\vb{r})=-\frac{i\hbar}{2m_\HE} [\Psi^*(\vb{r}) \grad{\Psi(\vb{r})}-\Psi(\vb{r}) \grad{\Psi^*(\vb{r})}]
+\end{align}
+Note that this last term is important to accurately reproduce the dispersion curve in liquid \he{}, but not in dopant dynamics. 
+Hence since it is computationally more expensive, it is usually neglected in our simulations. This constitutes the OT version.
+
+\subsubsection{$\mathcal{E}_c$ solid functional}
+
+The previous expression is known to be very accurate. However, numerical instabilities appear when the density reaches values close to that of the solid, which is the case around very attractive dopants.
+In this case we have used a modification of the OT functional which has been developed to describe bulk liquid helium and the liquid-solid transition \cite{Anc2005A}: the so-called solid functional
+\begin{align*}
+\mathcal{E}_c[\rho] =\frac{1}{2} \int \dd{\vb{r'}} \rho(\vb{r}) V_\mathrm{LJ} (|\vb{r}-\vb{r'}|) \rho(\vb{r'}) +\frac{c_2}{2} \, \rho(\vb{r})\bar{\rho}(\vb{r})^2 +\frac{c_3}{3} \,&\rho(\vb{r})\bar{\rho}(\vb{r})^3\\
+&+ C \rho(\vb{r}) \{1+\tanh(\beta[\rho(\vb{r})-\rho_m])\} \num
+\end{align*}
+	

@@ -1,0 +1,186 @@
+\documentclass[a4paper,12 pt,twoside]{report}
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc}     
+\usepackage[main = UKenglish,french]{babel}
+\usepackage[top=2.4cm, bottom=2.4cm, left=1.4cm, right=1.4cm,headheight=14.5pt]{geometry}
+%\usepackage[backend=bibtex]{biblatex}
+%\bibliography{biblio.bib}
+
+%	# Packages load
+
+\usepackage[labelfont=bf,justification=centering]{caption}
+% The cap­tion pack­age pro­vides many ways to cus­tomise the cap­tions in float­ing en­vi­ron­ments like fig­ure and ta­ble, and co­op­er­ates with many other pack­ages.
+% url =  https://www.ctan.org/pkg/caption
+
+\usepackage{amsmath}
+% It adapts for use in LATEX most of the math­e­mat­i­cal fea­tures found in AMS-TEX; it is highly rec­om­mended as an ad­junct to se­ri­ous math­e­mat­i­cal type­set­ting in LATEX.
+% url =  https://www.ctan.org/pkg/amsmath
+
+\usepackage{amssymb}
+% Provides an extended symbol collection.
+% url =  ftp://ftp.dante.de/tex-archive/fonts/amsfonts/doc/amssymb.pdf
+
+\usepackage{amsfonts}
+% An ex­tended set of fonts for use in math­e­mat­ics.
+% url =  https://www.ctan.org/pkg/amsfonts
+
+\usepackage{enumitem}
+% This pack­age pro­vides user con­trol over the lay­out of the three ba­sic list en­vi­ron­ments: enu­mer­ate, item­ize and de­scrip­tion.
+% url =  https://www.ctan.org/pkg/enumitem
+
+\usepackage{physics}
+% The pack­age de­fines sim­ple and flex­i­ble macros for type­set­ting equa­tions in the lan­guages of vec­tor cal­cu­lus and lin­ear al­ge­bra, us­ing Dirac no­ta­tion.
+% url =  https://www.ctan.org/pkg/physics
+
+\usepackage{graphicx}
+% The pack­age builds upon the graph­ics pack­age, pro­vid­ing a key-value in­ter­face for op­tional ar­gu­ments to the \in­clude­graph­ics com­mand.
+% url =  https://www.ctan.org/pkg/graphicx
+
+\usepackage{hyperref} 
+% The hy­per­ref pack­age is used to han­dle cross-ref­er­enc­ing com­mands in LATEX to pro­duce hy­per­text links in the doc­u­ment.
+% url =  https://www.ctan.org/pkg/hyperref
+%\hypersetup{colorlinks=true, allcolors=blue}
+
+\usepackage{fancyhdr} 
+% The pack­age pro­vides ex­ten­sive fa­cil­i­ties, both for con­struct­ing head­ers and foot­ers, and for con­trol­ling their use
+% url = https://www.ctan.org/pkg/fancyhdr
+
+\usepackage{csquotes}
+% This pack­age pro­vides ad­vanced fa­cil­i­ties for in­line and dis­play quo­ta­tions.
+% url = https://www.ctan.org/pkg/csquotes
+
+\usepackage{wrapfig}
+% Al­lows fig­ures or ta­bles to have text wrapped around them.
+% url =  https://www.ctan.org/pkg/wrapfig
+
+\usepackage{subcaption}
+% Permet de faire des sous-figures très facilement !
+
+\usepackage{csquotes}
+% Améliore les citations
+
+\usepackage{indentfirst}
+% Rajoute un alinéa tout le temps
+
+% # Page style congiguration (fancyhdr)
+
+\pagestyle{fancy}
+
+\fancyhf{}% Clear header and footer
+%\fancyhead[LE,RO]{\slshape  \rightmark}
+%\fancyhead[LO,RE]{\leftmark}
+\fancyfoot[C]{\thepage}% Custom footer
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%\fancypagestyle{plain}
+%{
+%	\fancyhf{}%
+%	\fancyfoot[C]{\thepage}%
+%	\fancyhead[LE,RO]{\slshape  \rightmark}
+%	\renewcommand{\headrulewidth}{0pt}
+%}  
+
+% # First page setup
+
+\newcommand*{\titleGP}
+{
+	\begingroup % Create the command for including the title page in the document
+	\newgeometry{top=1.4cm, bottom=0.8cm, left=1.4cm, right=1.4cm,headheight=14.5pt}
+	\thispagestyle{empty}	
+	\centering % Center all text
+	\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt} 
+	\rule{\textwidth}{0.4pt}\\[\baselineskip] 
+	\vspace*{-0.6\baselineskip}
+	{\LARGE \textsc{Dynamics of a superfluid helium nanodroplet} \par} 
+	\vspace*{0.2\baselineskip}
+	{\LARGE \textsc{doped with a single potassium atom}}\\[0.15\baselineskip] % Title
+	\rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt} % Thin horizontal line
+	\rule{\textwidth}{1.6pt}\\[\baselineskip] % Thick horizontal line
+	\vfill
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[scale=0.35]{../pictures/couverture}
+	\end{figure}	
+	\vfill
+	{\LARGE \textbf{Maxime \textsc{Martinez}$\,^{\circledast}$}\par} 
+	\vspace*{0.1\baselineskip}
+	{\large M2 \textit{Physique Fondamentale}, \textsc{Université Toulouse III Paul Sabatier}\par} 
+	\vspace*{1.0\baselineskip}
+	{\itshape Under the supervision of N.~\textsc{Halberstadt}$\,^{\circledast}$ and F.~\textsc{Coppens}$\,^{\circledast}$ \par}
+	{\itshape In tight collaboration  with M.~\textsc{Barranco}$\,^{\circledast\circledcirc}$ and M.~\textsc{P\'i}$\,^{\circledcirc}$ \par}
+	\vspace*{1.0\baselineskip}
+	{\itshape \footnotesize $^{\circledast}$Laboratoire des Collisions, Agr\'egats, R\'eactivit\'e, IRSAMC, UMR 5589, CNRS et Universit\'e~Toulouse~III Paul~Sabatier, 118 route de Narbonne, Toulouse Cedex, France \par}
+	\vspace*{0.1\baselineskip}
+	{\itshape \footnotesize $^{\circledcirc}$Departament FQA, Facultat de F\'isica, and IN2UB, Universitat de Barcelona, Diagonal 645, 08028 Barcelona, Spain\par}
+	\vspace*{-0.7\baselineskip}
+	\begin{figure}[h!]
+	\centering
+	\begin{minipage}[c]{0.52\linewidth}
+\centering
+		\includegraphics[scale=0.7]{../pictures/logo-UPS}
+	\end{minipage}
+\hfill
+	\begin{minipage}[c]{0.44\linewidth}
+\centering
+		\includegraphics[scale=0.9]{../pictures/logo-lcar}
+	\end{minipage}
+\end{figure}
+	\restoregeometry
+	\endgroup
+}
+
+\usepackage{tabularx}
+\usepackage[explicit]{titlesec}
+
+\usepackage{etoolbox}
+
+\makeatletter
+\patchcmd{\ttlh@hang}{\parindent\z@}{\parindent\z@\leavevmode}{}{}
+\patchcmd{\ttlh@hang}{\noindent}{}{}{}
+\makeatother
+%\definecolor{darkblue}{rgb}{0.12,0.47,0.87}
+\titleformat{\chapter}[display] 
+    {\vspace{-4\baselineskip}\Huge \selectfont \bfseries}
+    {\centering \thechapter.\,#1}
+    {0pt}
+    {\centering \LARGE}[\vspace{-1\baselineskip}]
+
+\titleformat{name=\chapter,numberless}[display] 
+    {\vspace{-4\baselineskip}\Huge \selectfont \bfseries}
+    {\centering #1}
+    {0pt}
+    {\centering \LARGE}[\vspace{-1\baselineskip}]
+    
+
+\newcommand\he{$^4$He}
+\newcommand\heN{$^4$He$_n$}
+\newcommand\HE{\mathrm{He}}
+\newcommand\K{\mathrm{K}}
+\newcommand\DIM{\mathrm{ES}}
+\newcommand\Sc{\mathcal{S}}
+\newcommand\KHE{\mathrm{K-He}}
+\newcommand\KHEN{{\mathrm{K-He}_N}}
+\newcommand\SO{\mathrm{SO}}
+\newcommand\LS{\mathrm{LS}}
+\newcommand\LJ{\mathrm{LJ}}
+\newcommand\J{\mathrm{J}}
+
+\newcommand\num{\addtocounter{equation}{1}\tag{\theequation}} % numerotte dans align*
+\newcommand\with{\quad \text{with} \quad}
+\newcommand\e{\mathrm{e}}
+\renewcommand{\arraystretch}{1.5} % aggrandi tableaux
+\newcommand\cadre[1]{\vspace{0.5\baselineskip} % cadre
+\fbox{
+	\begin{minipage}{0.95\textwidth}
+	#1
+	\end{minipage}}
+\vspace{0.5\baselineskip}}
+
+% pour citer
+\newcommand\citfig[1]{fig. \ref{#1}}
+\newcommand\cittab[1]{table \ref{#1}}
+\newcommand\citsec[1]{section \ref{#1}}
+\newcommand\citeq[1]{eq. \ref{#1}}
+\newcommand\citanx[1]{annex \ref{#1}}
+

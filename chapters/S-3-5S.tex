@@ -1,0 +1,76 @@
+\section{Excitation towards $5s$ state}
+
+The last part of this study, which is still in progress, is the simulation of the $5s\leftarrow 4s$ photo-excitation. 
+Since the ($5s$) state is isotropic, we could address this problem with both a classical and a quantum description for potassium.
+
+\subsection{Qualitative behavior and time scale}
+
+The first element that can be compared between the two approaches is the behavior of the potassium. 
+In both cases it is ejected after excitation within 200 fs (\citfig{fig:5S-pos}). 
+This was actually highly predictable looking at the pair potential (\citfig{fig:DIM-5s-pot}): it shows a potential energy of 700 K over the dissociation level (and in an isotropic state all helium-potassium pairs interact with the same potential). Nevertheless, we see that the asymptotic K velocity is not the same  in quantum and classical description (\citfig{fig:5S-vel}). We will investigate this point in the following paragraph.
+
+\begin{figure}[h!]
+	\centering
+	\begin{minipage}[c]{0.48\linewidth}
+		\input{../pictures/5S-pos}
+		\vspace{0.2\baselineskip}
+		\caption{Distance between classical/quantum K and He$_N$ centers of mass as a function of time\label{fig:5S-pos}}
+	\end{minipage}
+\hfill
+	\begin{minipage}[c]{0.48\linewidth}
+		\input{../pictures/5S-vel}
+		\vspace{0.2\baselineskip}
+		\caption{Velocity of classical/quantum K and He$_N$ as a function of time\newline{}\label{fig:5S-vel}}
+	\end{minipage}
+\end{figure}
+
+\subsection{Strongly interacting neighbor helium atoms}
+
+Let us consider a simple, impulsive  model, which has already been used in the past \cite{Her2012}. 
+K interacts with $M$ neighboring He atoms. We assume that all the excitation energy $\Delta E$ (\textit{id est} excess energy with respect to the dissociation threshold) is converted into kinetic energy. 
+We can write both energy and momentum conservation
+\begin{align}
+\frac{\vb{p}_\K^2}{2m\K}+\sum_\HE^M \cdot\frac{\vb{p}^2_{\HE}}{2m_\HE} &= \Delta E\\
+\vb{p}_\K + \sum_\HE^M \cdot \vb{p}_\HE &= 0 
+\end{align}
+Then we make the following assumption: all He momentum are equal, this is quite a huge approximation but this model is simple. Then some basic algebra gives an expression for $M$
+\begin{align}
+\frac{\vb{p}_\K^2}{2m\K} &= \frac{M\cdot m_\HE}{m_K+M\cdot m_\HE} \Delta E \equiv \alpha \, \Delta E\\
+M &= \frac{\alpha}{1-\alpha} \frac{m_\K}{m_\HE}
+\end{align}
+
+In order to probe different excitation energies we have to shift the initial position of the potassium at excitation time. 
+In the classical description  of K we could study both diabatic or adiabatic helium density (\textit{with frozen or relaxed helium density for the new position)}, while the quantum case will only be discussed within the adiabatic approximation, but the diabatic one is being studied currently. 
+\begin{figure}[h!]
+\centering
+\begin{minipage}[c]{0.48\linewidth}
+\centering
+		\input{../pictures/5S-mass}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.48\linewidth}
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+K motion & Quantum	& \multicolumn{2}{c|}{Classical} \\
+\hline
+He density & Adiabatic	& Adiabatic & Diabatic \\
+  \hline
+	$\alpha$ & 0.38 & 0.50 & 0.49 \\
+	\hline
+	$M$ & 6.03 & 10.06 & 9.49 \\
+  \hline
+\end{tabular}
+\end{minipage}
+\vspace{0.5\baselineskip}
+		\caption{Asymptotic kinetic energy as a function of excitation energy, comparison between diabatic/adiabatic classical and quantum description, and table of values for linear fit\label{fig:5S-mass}}
+\end{figure}
+
+Our model seems to work well up to 1250 K then we see some non linear effects. It is presumably due to a large amount of energy exchange with the droplet, which can no longer be described as impulsive, hard-sphere like dissociation.
+We note that the classical description of K gives a higher number of neighboring helium atoms than the quantum one.
+This can be surprising at first, but if we look at the ground state density profile (\citfig{fig:4S-Q-C-lsolid}), we note that the edge is smoother, so the density of neighboring atoms is lower. 
+Nevertheless we are still investigating this point. 
+Finally, adiabatic and diabatic descriptions seem to give similar results in classical case. 
+This means that changes in density imposed by K fluctuation in equilibrium state has more or less no consequence on final kinetic energy, which is not really surprising as we are looking for asymptotic value.
+
+

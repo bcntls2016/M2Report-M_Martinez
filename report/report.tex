@@ -1,0 +1,77 @@
+\include{preambule}
+\usepackage[citestyle=phys,natbib=true, backend=bibtex]{biblatex}
+\bibliography{../bibliography/biblio.bib}
+
+\begin{document}
+
+\graphicspath{{../pictures/}}
+
+\clearpage\titleGP\thispagestyle{empty}
+\newpage\null\thispagestyle{empty}\newpage
+\clearpage\tableofcontents\thispagestyle{empty}
+\newpage\null\thispagestyle{empty}\newpage
+
+\setcounter{page}{1} 
+
+\newlength{\oldindent}
+\setlength{\oldindent}{\parindent}
+
+% = INTRODUCTION =========================== %
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+
+\input{../chapters/INTRODUCTION}
+
+\newpage\null\thispagestyle{empty}\newpage
+% = THEORY ================================= %
+\chapter{Theory} % Simulation
+
+\input{../chapters/T-1-DFT}
+\input{../chapters/T-2-DIM}
+\input{../chapters/T-3-TDDFT}
+
+\newpage\null\thispagestyle{empty}\newpage
+
+% = SIMULATION ============================= %
+\chapter{Simulation} 
+
+\input{../chapters/S-1-4S}
+\input{../chapters/S-2-4P}
+\input{../chapters/S-3-5S}
+
+\newpage\null\thispagestyle{empty}\newpage
+
+% = CONCLUSION ============================= %
+\chapter*{Conclusion}
+\addcontentsline{toc}{chapter}{Conclusion}
+
+\input{../chapters/CONCLUSION}
+
+\newpage\null\thispagestyle{empty}\newpage
+
+% = ANNEXES ================================ %
+\chapter*{Annex: technical details on coding}
+\addcontentsline{toc}{chapter}{Annexe: technical details on coding}
+
+\setcounter{table}{0}
+\setcounter{section}{0}
+\renewcommand{\thetable}{\arabic{table}}
+\renewcommand{\thechapter}{}
+\renewcommand{\thesection}{\alph{section}}
+
+\input{../chapters/A-1-ITP}
+\input{../chapters/A-2-RTP}
+\input{../chapters/A-3-SPECTRE}
+\input{../chapters/A-4-VALUES}
+
+\newpage\null\thispagestyle{empty}\newpage
+
+% = BIBLIO ================================= %
+\addcontentsline{toc}{chapter}{Bibliography}
+\begingroup
+\raggedright
+\sloppy
+\printbibliography
+\endgroup
+
+\end{document} 

@@ -1,0 +1,58 @@
+\section{TDDFT}
+
+The purpose of this work is to study the dynamic evolution of our system under absorption of a photon. 
+Hence in this section we describe the method used for the dynamics.
+It is based on the \textsc{Runge-Gross} theorem \cite{Run1984} which extends the DFT formalism to time dependent studies (TD-DFT).
+
+\subsection{Excitation process}
+
+We assume that the exciting laser pulse is very short, so that the nuclei do not have time to move (``vertical transition'').
+This amounts to considering that the initial conditions for the dynamics are the ground equilibrium helium density and alkali position for the nuclei, and that the electronic state is suddenly switched to the excited state $(4p)$ or $(5s)$. In other words, we start a dynamic study with a new interaction Hamiltonian but with the ground state density, this is equivalent to the \textsc{Franck-Condon} approximation with a constant transition dipole moment.
+
+\subsection{Classical dynamics}
+
+TD-DFT is based on the variation of the action $\mathcal{A}$ (instead of energy in DFT) with respect to all its parameters
+\begin{align}
+\mathcal{A}[\Psi,\vb{r}_\K,\lambda] = \int \dd{t} \left( E[\Psi,\vb{r}_\K,\lambda] - i\hbar \int \dd{\vb{r}} \Psi^*(\vb{r},t) \pdv{t} \Psi(\vb{r},t) - i\hbar \bra{\lambda} \pdv{t} \ket{\lambda} - \frac{1}{2} m_\K \vb{\dot{r}}_\K^2\right)
+\end{align}
+
+This procedure yields to a set of three coupled equations that govern the dynamics (computational details are described in the \citanx{sec:ANX-rtp}).
+\begin{align}
+i\hbar \pdv{t} \Psi(\vb{r},t)  &= \left(-\frac{\hbar^2}{2m_\HE} \grad{}^2_{\vb{r}} + \frac{\delta \mathcal{E}_c}{\delta \rho(\vb{r})}  + V_\KHE^{nl\lambda} (\vb{r}-\vb{r}_\K)\right) \Psi(\vb{r},t) \\
+i\hbar \pdv{t} \ket{\lambda} &= H_\KHEN^{nl}(\vb{r}_\K) \ket{\lambda} \\
+m_\K \vb{\ddot{r}}_\K &= -\grad{}_{\vb{r}_\K} \left(\int \dd{\vb{r}} \rho(\vb{r}) V_\KHE^{nl\lambda}(\vb{r}-\vb{r}_\K) \right) = - \left(\int \dd{\vb{r}}  V_\KHE^{nl\lambda}(\vb{r}-\vb{r}_\K)\grad{}_{\vb{r}}\rho(\vb{r}) \right)
+\end{align}
+
+\subsection{Test particles and quantum dynamics in an isotrotropic state}
+
+We could use the same procedure as for treating K quantum mechanically in the statics. However, the potassium atom can acquire a rather high kinetic energy when dissociating, and this is impossible to describe with the same grid as that of the helium density.
+Instead we used a test particles method based on Bohmian dynamics, as proposed by Hernando \textit{et al.} \cite{Her2012} for Li and Na photodissociation from a helium droplet. \\
+
+The starting point is to write the impurity complex wave function in the exponential with modulus $\psi(\vb{r},t)$ and phase $\mathcal{S}(\vb{r},t)$, $\psi$ and $\mathcal{S}$ being two real and positive functions
+\begin{align}
+\phi(\vb{r},t) &= \psi(\vb{r},t)\, \e^{i\mathcal{S}(\vb{r},t)/\hbar} 
+\end{align}
+
+We set $\vb{v}= \frac{1}{m_\K} \grad{} \mathcal{S}$, then the current density $\vb{j} = \frac{\hbar}{2m_\K} \left(\phi^* \grad{} \phi - \phi \grad \phi^* \right)$ becomes $\vb{j} = \psi^2 \, \vb{v}$. Finally the \textsc{Schrödinger} equation gives a coupled system of equations
+\begin{align}
+\pdv{\psi^2(\vb{r},t)}{t} &= - \grad{} \cdot \vb{j}(\vb{r},t) \label{eq:TDDFT-cont} \\
+- \pdv{\mathcal{S}(\vb{r},t)}{t} &= \frac{1}{2} m_\K \vb{v}^2(\vb{r},t) + \mathcal{Q}(\vb{r},t) + V(\vb{r}) \with \mathcal{Q} = -\frac{\hbar^2}{2m_\K} \frac{\grad{}^2 \psi}{\psi} \label{eq:TDDFT-HJ} 
+\end{align}
+
+Then, we consider a set of $M$ particles with trajectories $\{\vb{R_j}(t)\}$ with $\vb{R}_i(t)=\vb{R}(\vb{r}_i,t)$ and $\vb{R}_i(0)=\vb{r}_i$ such that
+\begin{align}
+\psi(\vb{r},t)&=\underset{M \rightarrow \infty}{\text{lim}}\sum_{i=1}^M \delta [\vb{r}-\vb{R}_i(t)] \\
+\vb{j}(\vb{r},t)&=\underset{M \rightarrow \infty}{\text{lim}}\sum_{i=1}^M \vb{v}[\vb{R_i}(t)]\delta [\vb{r}-\vb{R}_i(t)]
+\end{align}
+
+It can be shown \cite{DFTguide} that \citeq{eq:TDDFT-cont} is equivalent to $\dot{\vb{R}}_i(t) = \vb{v}[\vb{R}_i(t)]$. Then by taking the gradient of \citeq{eq:TDDFT-HJ} and rewriting it in the Lagrangian reference frame ($\mathrm{d}/\mathrm{d}t = \partial/\partial t + \vb{v} \cdot \vb{\nabla{}}$) one obtains the \textit{quantum} \textsc{Newton} equation
+\begin{align}
+m\, \ddot{\vb{R}}_i(t) = - \nabla[\mathcal{Q}(\vb{r},t)+V(\vb{r},t)]|_{\vb{r}=\vb{R}_i(t)}
+\end{align}
+
+In practical, we use $M=2\times 10^5$ test particles, we randomly generate their initial position using the ground state wave function and then we solve for each its \textsc{Newton} equation (in the same way as in the previous dynamics equations, see the \citanx{sec:ANX-rtp}). In order to compute physical quantities and the so-called quantum potential $\mathcal{Q}$, one builds a 3D histogram based on our simulation grid with test particle positions at the given time. In particulary one can show \cite{DFTguide} the following equations for potassium position, velocity and kinetic energy expected values
+\begin{align}
+\bra{\phi}\vb{r}\ket{\phi}&= \int \dd{\vb{r}} \vb{r} \, \psi^2(\vb{r},t)\\
+\bra{\phi}\vb{v}\ket{\phi} &= \frac{1}{m} \int \dd{\vb{r}} \vb{j}(\vb{r},t)\\
+\bra{\phi}-\frac{\hbar^2 \vb{\nabla}^2}{2m_\K} \ket{\phi} &=\int \dd{\vb{r}} \left[\frac{1}{2}m\vb{v}^2(\vb{r},t) + \mathcal{Q}(\vb{r},t) \right] \, \psi^2(\vb{r},t)
+\end{align}

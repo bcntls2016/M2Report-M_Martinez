@@ -1,0 +1,36 @@
+\section{Simulating spectra}
+\label{sec:ANX-spectra}
+
+The width of absorption spectrum is the result of helium density and potassium wave function fluctuations. In order to simulate this spectrum, we use the DF sampling method, the interested reader should refer to \cite{Mat2011}.\\
+
+One can write, using the time dependent formulation, that within the \textsc{Born-Oppenheimer} approximation, the intensity associated with an electronic transition from a state $i$ to a state $f$ writes as
+\begin{align}
+I(\omega)\propto \int \dd{t} \e^{i(\omega+\omega_i)t} \int \dd{\vb{r}} (\mu_{f\leftarrow i}\, \phi_i)^* \, \e^{-iH_f t/\hbar}  \, (\mu_{f\leftarrow i} \, \phi_i)
+\end{align}
+
+In this expression $\phi_i$ refers to the eigenfunction of potassium in the initial state with energy $\hbar \omega_i$, $\mu_{f\leftarrow i}$ is the electronic transition dipole and $H_f$ is the potassium Hamiltonian in the final state that can written as a sum of kinetic and potential energy $H=T+V(\vb{r}_\K)$.\\
+
+We can then expand $\phi$ in a basis of eigenvectors $\alpha_\nu(\vb{r}) $ $H_f$, which  gives an expression for the intensity
+\begin{align}
+\phi(\vb{r})&=\sum_\nu a_\nu \alpha_\nu(\vb{r}) \with a_\nu = \int \dd{\vb{r}} \alpha_\nu^*(\vb{r}) \phi_i(\vb{r})\\
+I(\omega)&=\sum_\nu |a_\nu|^2 \, \delta(\omega-(\omega_\nu-\omega_i))
+\end{align}
+
+This gives a spectrum of lines with energies $\hbar(\omega_\nu-\omega_i)$ and relative intensities $|a_\nu|^2$ which are the so-called \textsc{Franck-Condon} factors . Considering that the final states are a quasi-continuous spectrum of $H_f$, it can be assumed that kinetic contribution is negligible. 
+Then we can integrate over time and we obtain the semi-classical expression for the intensity, which is often called \textit{reflection principle}.
+\begin{align}
+I(\omega)=\int \dd{\vb{r}} |\phi_i(\vb{r})|^2 \, \delta \left(\omega-\left(\frac{V(\vb{r})}{\hbar} - \omega_i\right)\right) 
+\end{align}
+
+In order to evaluate this expression, we randomly generate $n_c$ configuration of $N$ positions for the helium atoms and one for potassium. 
+The helium positions are generated from the converged density with a hard-sphere repulsion (exclusion volume with radius 2.18 \AA{}) which is supposed to represent the He-He correlation (one may actually refer to \cite{DFTguide} because the radius of exclusion is chosen density-dependent, but this is beyond the scope of this simple explanation). 
+The potassium position can be either generated from its wave function in a quantum treatment or from its classical position. For a given sampled configuration $\{k\}$ the transition energy is
+\begin{align}
+E\{k\}=V_f\{k\}-V_i\{k\}
+\end{align}
+where $V$ corresponds to a sum over pair interactions which is written as $E^{nl}_{ij\alpha\beta}$ in \citeq{eq:DIM-defE} with $\{nl,i,j,\alpha,\beta\}$ fixed by the state we are interested in. 
+Finally we get the spectrum by collecting each configuration contribution in a histogram.
+\begin{align}
+I(\omega)\propto \frac{1}{n_c} \sum_{\{k\}} \delta \left(\omega-\frac{E\{k\}}{\hbar}\right) 
+\end{align}
+

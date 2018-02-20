@@ -1,0 +1,77 @@
+We will now describe and discuss the results of our simulations. For the whole study we used a number  $N=1000$ of helium atoms. It is a compromise between realistic size to compare with experiments (typical droplet sizes between $\sim$ 500 and $\sim$ 10000 atoms for this type of measurements) and computational cost.
+
+\section{Finding ground state properties}
+
+($4s$) state is the ground state of our system. 
+Thanks to the moderate computational cost of its simulation we can examine several important factors.
+The first one is the comparison of a classical \textit{vs} quantum treatment of the potassium atom.
+The second one is the version of the functional used, the original OT one or a modification designed to deal with high values of the density described as solid functional in \citsec{sec:DFT-func-analytics}.
+
+\subsection{Quantum versus classical potassium}
+\label{sec:4S-dia}
+
+The ground state K wave function is expected to be smooth.
+Hence it can be described using the same grid as the helium one. 
+As can be seen in \citfig{fig:4S-Q-C-lsolid}, a quantum treatment of the potassium atom leads to a slightly displaced atom from center of mass of the droplet (around 1\AA) compared to the position given by a classical description.
+In addition, the droplet radius is slightly increased and the surface region slightly more diffuse.
+This phenomenon can be understood by considering the spatial extension of the impurity wave-function compared to the classical point-like position.
+\begin{figure}[h]
+	\centering
+	\input{../pictures/4S-Q-C-lsolid}
+	\vspace{-0.5\baselineskip}
+	\caption{Density profile in a plane containing the center of mass of the droplet and the potassium atom, for a quantum or a classical description of K}
+	\label{fig:4S-Q-C-lsolid}
+\end{figure}
+
+\subsection{Quick discussion on the influence of the version of the functional}
+
+We already discussed the fact that the OTC functional could become unstable during a dynamics simulation due to the fact that it cannot handle sharp features appearing around attractive dopants. 
+This can occur in the excited ($4p$) states because of the attractive $\Pi$ well. 
+The two versions can be compared in the static study of the ground ($4s$) state.
+We see in \citfig{fig:4S-C-otc-lsolid} that the two functionals give nearly the same helium density, except near the dopant where the solid version gives a smoother profile, as expected.
+\begin{figure}[h]
+	\centering
+	\input{../pictures/4S-C-otc-lsolid}
+	\vspace{-0.5\baselineskip}
+	\caption{Density profile in a plane containing the center of mass of the droplet and the potassium atom, for the solid or the OTC functional}
+	\label{fig:4S-C-otc-lsolid}
+\end{figure}
+
+\subsection{Justifying diabatic hypothesis}
+
+One model that has been very much used to interpret experimental spectra of alkali atoms bound to helium droplets or even some of the dynamics aspects of their photodissociation is the so-called \emph{pseudo-diatomic model}.
+In this model the system is represented as a diatomic molecule in which the helium droplet plays the role of a pseudo-atom.
+The potential energy curves for this model are then taken by averaging the pair potentials over the (static) helium density. \\
+
+There are two ways of choosing which density to use for this convolution.
+The first one is what we call the \textit{diabatic} hypothesis: the motion of K is supposed to be much faster than the droplet one. 
+The second one, which will be called \textit{adiabatic}, optimizes the helium density for each value of the position of the dopant, which is equivalent to assuming that the helium density can adapt instantly to a new position of the potassium.
+We use here the simple case of the ground ($4s$) study to get an idea of which hypothesis is closer to reality.
+Let us stress that both models imply that there is no energy exchange between the dopant and the droplet during the dynamics, whereas in the TDDFT description the whole dynamics is described, albeit in a mean-field way.\\
+
+Our formalism (minimization of a functional with respect to all its parameters) makes it possible to add constraints to our minimization.
+We can thus impose a given distance $\mathcal{Z}_0$ between the dopant and the helium center of mass (the actual distance is noted $\mathcal{Z}$)
+\begin{align}
+E[\rho]\rightarrow E[\rho,\mathcal{Z}_0] = E[\rho] + \frac{\alpha}{2}(\mathcal{Z}-\mathcal{Z}_0)^2 \quad \text{with $\alpha$ an arbitrary constant}
+\end{align}
+
+Then we proceed in the following way: we start simulations with different $\mathcal{Z}_0$ value and we register the first and last energy balance. 
+The first one give the system energy without relaxation (diabatic approximation) while the final one gives the energy after minimization (adiabatic approximation). In order to decide which of the two approximations is better to describe our system we can compare the results to the DFT simulation with a quantum description of K, which is expected to be more accurate. 
+The idea is to consider that in the ground state the particle is locally feeling a harmonic potential, so we can use the well known ground state wave function and associated energy.
+\begin{align}
+\psi_0(z) = \left(\frac{\alpha}{\pi}\right)^{1/4} \mathrm{e}^{-\alpha \, z^2/2} \quad \text{and} \quad E_0 = \frac{\hbar\omega}{2} \quad \text{with} \quad \alpha = \frac{m\omega}{\hbar}
+\label{eq:4S-oh}
+\end{align}
+
+The results are shown in \citfig{fig:4S-potentials}.
+First we can note that the diabatic and adiabatic potentials do not reach the same asymptotic energy.
+This is because in the adiabatic approximation the helium droplet is a pure, relaxed helium droplet while in the diabatic one it has the same density as when the potassium was at equilibrium distance.
+Second, we observe that the quantum case (DFT with quantum description of K) seems to be closer to the diabatic approximation. 
+
+\begin{figure}[h]
+\centering
+    \input{../pictures/4S-potentials}
+    \vspace{-0.5\baselineskip}
+    \caption{Diabatic, adiabatic and quantum potentials with associated wave functions and zero point energies in the harmonic approximation. The quantum potential is deduced from a harmonic fit of the wave function obtained from DFT with K treated quantum mechanically; the diabatic and adiabatic wave functions are obtained from a harmonic fit of the corresponding potentials}
+    \label{fig:4S-potentials}
+\end{figure}
